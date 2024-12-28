@@ -1,3 +1,8 @@
 <mat-toolbar>
-  <span>My Messages</span>
+    <span>My App</span>
+  <span class="spacer"></span>
+    <nav>
+      <a mat-button routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">My posts</a>
+      <a mat-button routerLink="/create" routerLinkActive="active-link">Create post</a>
+    </nav>
 </mat-toolbar>
